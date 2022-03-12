@@ -35,10 +35,10 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to trickle cms." });
+  res.json({ message: "Welcome to trickle cms 3." });
 });
 
-require("./routes/cms.routes")(app);
+require("./app/routes/cms.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.NODE_DOCKER_PORT || 8080;
