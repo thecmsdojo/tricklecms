@@ -12,6 +12,8 @@ services:
       - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
     volumes:
       - db:/data/db
+    networks:
+      - backend
   app:
     depends_on:
       - mongodb
@@ -28,6 +30,11 @@ services:
       - DB_PORT=$MONGODB_DOCKER_PORT
     stdin_open: true
     tty: true
+    networks:
+      - backend
 
 volumes:
   db:
+
+networks:
+  backend:
