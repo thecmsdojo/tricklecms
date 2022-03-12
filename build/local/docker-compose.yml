@@ -4,12 +4,17 @@ services:
   app:
     build: ../..
     restart: unless-stopped
+    environment:
+      APP_ENV: local
     ports:
       - 8080:8080
     stdin_open: true
     tty: true
+    volumes:
+      - ../../app:/app
     networks:
       - cms
+    command: "sh /app/start_server.sh"
 
 networks:
   cms:
