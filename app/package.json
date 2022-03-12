@@ -1,0 +1,22 @@
+{
+  "name": "tricklecms",
+  "version": "1.0.0",
+  "description": "Node.js Headless CMS with Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "cms"
+  ],
+  "author": "the CMS Dojo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

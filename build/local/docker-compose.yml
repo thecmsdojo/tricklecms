@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build: ../..
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    stdin_open: true
+    tty: true
+    networks:
+      - cms
+
+networks:
+  cms:
