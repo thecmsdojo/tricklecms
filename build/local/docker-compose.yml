@@ -14,7 +14,6 @@ services:
       - ../../app:/app
     networks:
       - cms
-    command: "sh /app/start_server.sh"
 
 networks:
   cms:
