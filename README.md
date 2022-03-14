@@ -1,1 +1,1 @@
-Tricle CMS
+Tricle CMS, a content management system written in Node.js
