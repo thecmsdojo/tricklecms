@@ -18,7 +18,8 @@
   "author": "the CMS Dojo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "ini": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
