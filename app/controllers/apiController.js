@@ -1,5 +1,7 @@
 exports.version = (req, res) => {
-    const version = 12;
+    const resObj = {
+        version: 2
+    };
     //we must send a string back
-    res.send(`${version}`);
+    res.send(JSON.stringify(resObj));
 };
